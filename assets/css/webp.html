@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Converter</title>
+  <script src="https://cdn.rawgit.com/Kagami/ffmpeg.js/master/ffmpeg-all.js"></script>
+</head>
+
+<body>
+  <h1>Media Converter</h1>
+
+  <h2>Image Converter</h2>
+  <input type="file" id="imageInput" accept="image/*">
+  <button onclick="convertToWebP()">Convert to WebP</button>
+  <button onclick="convertToAVIF()">Convert to AVIF</button>
+  <br>
+  <img id="outputImage" alt="Converted Image" style="display:none;">
+  <a id="downloadLink" style="display:none;">Download</a>
+
+  <h2>Video Compressor</h2>
+  <input type="file" id="videoInput" accept="video/*">
+  <button onclick="compressVideo()">Compress Video</button>
+  <br>
+  <video id="outputVideo" controls style="display:none;"></video>
+  <a id="videoDownloadLink" style="display:none;">Download Compressed Video</a>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
